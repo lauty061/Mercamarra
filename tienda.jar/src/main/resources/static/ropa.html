@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilosauto.css" type="text/css"/>
+
+</head>
+<body>
+    <header class="custom-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/logo-mercamarra.png" class="logo-img">
+                <h1>Mercamarra</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+            </div>
+            <div class="user-options">
+                <span>Hola, Usuario | <a href="/usuarios/logout">Cerrar Sesión</a></span>
+            </div>
+                <a href="/carrito.html"><img src="/icons8-agregar-a-carrito-de-compras-30.png" alt="Carrito"></a>
+            </div>
+        </div>
+    </header>
+    <nav class="custom-nav">
+        <ul class="nav-bar">
+            <li><a href="/index">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="/usuarios/registro">Registrarse</a></li>
+            <li><a href="/usuarios/login">Inicio de Sesión</a></li>
+            <li><a href="/usuarios/logout">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
+    <main class="main-container">
+        <aside class="filters">
+            <h2>Filtrar Ropa</h2>
+            <div class="filter-group">
+                <h3>Ubicación</h3>
+                <button class="filter-btn" data-filter="nike">Nike</button>
+                <button class="filter-btn" data-filter="adidas">Adidas</button>
+                <button class="filter-btn" data-filter="dc">DC</button>
+                <button class="filter-btn" data-filter="lacoste">Lacoste</button>
+                <button class="filter-btn" data-filter="all">Todos</button>
+            </div>
+            <div class="filter-group">
+                <h3>Marca</h3>
+                <button class="filter-btn" data-filter="zapatillas">Zapatillas</button>
+                <button class="filter-btn" data-filter="buzos">Buzos</button>
+                <button class="filter-btn" data-filter="botines">Botines</button>
+                <button class="filter-btn" data-filter="remeras">Remeras</button>
+                <button class="filter-btn" data-filter="all">Todos</button>
+            </div>
+        </aside>
+        <section class="product-grid">
+    <div class="product-card" data-category="nike" data-brand="zapatillas">
+        <img src="/jordan3.png" alt="Imagen de las zapatillas Jordan 3">
+        <h3>Jordan 3</h3>
+        <p>$550.000</p>
+        <p>Nike</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Jordan 3', 'Zapatillas', 550000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="dc" data-brand="zapatillas">
+        <img src="/dcshoes.jpg" alt="Imagen de zapatillas DC Shoe">
+        <h3>Dc Shoe</h3>
+        <p>$200.000</p>
+        <p>Dc</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Dc Shoe', 'Zapatillas', 200000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="nike" data-brand="buzos">
+        <img src="/buzonike.webp" alt="Imagen del buzo negro Nike">
+        <h3>Buzo Negro</h3>
+        <p>$40.000</p>
+        <p>Nike</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Buzo Negro', 'Buzos', 40000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="adidas" data-brand="botines">
+        <img src="/botines1.webp" alt="Imagen de botines azules Adidas">
+        <h3>Botines Azules</h3>
+        <p>$120.000</p>
+        <p>Adidas</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Botines Azules', 'Botines', 120000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="nike" data-brand="botines">
+        <img src="/botines2.jpg" alt="Imagen de botines rosita Nike">
+        <h3>Botines Rosita</h3>
+        <p>$120.000</p>
+        <p>Nike</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Botines Rosita', 'Botines', 120000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="lacoste" data-brand="remeras">
+        <img src="/remeralac.png" alt="Imagen de la remera Lacoste">
+        <h3>Remera</h3>
+        <p>$20.000</p>
+        <p>Lacoste</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Remera', 'Remeras', 20000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="adidas" data-brand="buzos">
+        <img src="/buzoadi.jpg" alt="Imagen del buzo Adidas Falcon">
+        <h3>Falcon</h3>
+        <p>$5.000.000</p>
+        <p>Adidas</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Falcon', 'Buzos', 5000000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="nike" data-brand="zapatillas">
+        <img src="/Jordan_4_Retro_Red_Cement1_grande.webp" alt="Imagen de las zapatillas Jordan 4">
+        <h3>Jordan 4</h3>
+        <p>$700.000</p>
+        <p>Nike</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Jordan 4', 'Zapatillas', 700000)">Comprar</button>
+    </div>
+</section>
+
+    </main>
+</body>
+<footer class="footer">
+    <p>© 2024 Mercamarra. Todos los derechos reservados.</p>
+</footer>
+<script src="/scriptauto.js"></script>
+</html>

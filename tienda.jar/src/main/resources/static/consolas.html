@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilosauto.css" type="text/css"/>
+    <title>Consolas - Mercamarra</title>
+
+</head>
+<body>
+    <header class="custom-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/logo-mercamarra.png" class="logo-img">
+                <h1>Mercamarra</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+            </div>
+            <div class="user-options">
+                <!-- El usuario debe estar autenticado para ver su nombre -->
+                <span>Hola, Usuario | <a href="/usuarios/logout">Cerrar Sesión</a></span>
+            </div>
+
+
+                <a href="/carrito.html"><img src="/icons8-agregar-a-carrito-de-compras-30.png" alt="Carrito"></a>
+            </div>
+        </div>
+    </header>
+    <nav class="custom-nav">
+        <ul class="nav-bar">
+            <li><a href="/index">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="/usuarios/registro">Registrarse</a></li>
+            <li><a href="/usuarios/login">Inicio de Sesión</a></li>
+            <li><a href="/usuarios/logout">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
+    <main class="main-container">
+        <aside class="filters">
+            <h2>Filtrar Consolas</h2>
+            <div class="filter-group">
+                <h3>Categorias</h3>
+                <button class="filter-btn" data-filter="play">Play</button>
+                <button class="filter-btn" data-filter="xbox">Xbox</button>
+                <button class="filter-btn" data-filter="nintendo">Nintendo</button>
+                <button class="filter-btn" data-filter="joysticks">joysticks</button>
+                <button class="filter-btn" data-filter="compu">Computadora Gamer</button>
+                <button class="filter-btn" data-filter="juegos">Juegos</button>
+                <button class="filter-btn" data-filter="all">Todos</button>
+            </div>
+        </aside>
+        <section class="product-grid">
+    <div class="product-card" data-category="" data-brand="play">
+        <img src="/ps5.jpg">
+        <h3>Play Station 5</h3>
+        <p>$1.000.000</p>
+        <p>Consola</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Play Station 5', 'Consola', 1000000)">Añadir al Carrito</button>
+    </div>
+    <div class="product-card" data-category="" data-brand="play">
+        <img src="/playstation-4.gif">
+        <h3>Play Station 4</h3>
+        <p>$800.000</p>
+        <p>Consola</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Play Station 4', 'Consola', 800000)">Añadir al Carrito</button>
+    </div>
+    <div class="product-card" data-category="" data-brand="nintendo">
+        <img src="/switch.jpg">
+        <h3>Nintendo Switch</h3>
+        <p>$650.000</p>
+        <p>Consola</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Nintendo Switch', 'Consola', 650000)">Añadir al Carrito</button>
+    </div>
+    <div class="product-card" data-category="" data-brand="nintendo">
+        <img src="/3ds.jpg">
+        <h3>Nintendo 3DS</h3>
+        <p>$60.000</p>
+        <p>Consola</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Nintendo 3DS', 'Consola', 60000)">Añadir al Carrito</button>
+    </div>
+    <div class="product-card" data-category="" data-brand="xbox">
+        <img src="/xbox.jpg">
+        <h3>Xbox</h3>
+        <p>$600.000</p>
+        <p>Consola</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Xbox', 'Consola', 600000)">Añadir al Carrito</button>
+    </div>
+    <div class="product-card" data-category="" data-brand="compu">
+        <img src="/pcgamer.jpg">
+        <h3>PC Gamer</h3>
+        <p>$700.000</p>
+        <p>Pc</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('PC Gamer', 'Pc', 700000)">Añadir al Carrito</button>
+    </div>
+    <div class="product-card" data-category="" data-brand="joysticks">
+        <img src="/controles.jpg">
+        <h3>Joysticks</h3>
+        <p>$40.000</p>
+        <p>Accesorios</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Joysticks', 'Accesorios', 40000)">Añadir al Carrito</button>
+    </div>
+    <div class="product-card" data-category="" data-brand="juegos">
+        <img src="/juegoskdkdkd.jpg">
+        <h3>Juegos</h3>
+        <p>$25.000</p>
+        <p>Play</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Juegos', 'Play', 25000)">Añadir al Carrito</button>
+    </div>
+</section>
+
+    </main>
+</body>
+<footer class="footer">
+    <p>© 2024 Mercamarra. Todos los derechos reservados.</p>
+</footer>
+<script src="/scriptauto.js"></script>
+</html>

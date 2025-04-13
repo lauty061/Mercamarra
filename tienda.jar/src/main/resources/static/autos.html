@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estilosauto.css" type="text/css"/>
+
+    <title>Autos - Mercamarra</title>
+</head>
+<body>
+   <header class="custom-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/logo-mercamarra.png" class="logo-img">
+                <h1>Mercamarra</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+            </div>
+            <div class="user-options">
+                <span>Hola, Usuario | <a href="/usuarios/logout">Cerrar Sesión</a></span>
+            </div>
+            <a href="/carrito.html"><img src="/icons8-agregar-a-carrito-de-compras-30.png" alt="Carrito"></a>
+            </div>
+        </div>
+    </header>
+    <nav class="custom-nav">
+        <ul class="nav-bar">
+            <li><a href="/index">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="/usuarios/registro">Registrarse</a></li>
+            <li><a href="/usuarios/login">Inicio de Sesión</a></li>
+            <li><a href="/usuarios/logout">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main class="main-container">
+        <aside class="filters">
+            <h2>Filtrar Autos</h2>
+            <div class="filter-group">
+                <h3>Ubicación</h3>
+                <button class="filter-btn" data-filter="capital-federal">Capital Federal</button>
+                <button class="filter-btn" data-filter="gba-norte">GBA Norte</button>
+                <button class="filter-btn" data-filter="gba-sur">GBA Sur</button>
+                <button class="filter-btn" data-filter="all">Todos</button>
+            </div>
+            <div class="filter-group">
+                <h3>Marca</h3>
+                <button class="filter-btn" data-filter="peugeot">Peugeot</button>
+                <button class="filter-btn" data-filter="fiat">Fiat</button>
+                <button class="filter-btn" data-filter="falcon">Falcon</button>
+                <button class="filter-btn" data-filter="audi">Audi</button>
+                <button class="filter-btn" data-filter="ferrari">Ferrari</button>
+                <button class="filter-btn" data-filter="mercedes">Mercedes</button>
+                <button class="filter-btn" data-filter="all">Todos</button>
+            </div>
+        </aside>
+        <section class="product-grid">
+            <div class="product-card" data-category="capital-federal" data-brand="peugeot">
+                <img src="/208v1.webp" alt="Peugeot 208">
+                <h3>Peugeot 208</h3>
+                <p>$25.130.000</p>
+                <p>Capital Federal</p>
+                <button class="buy-btn" onclick="agregarAlCarrito('Peugeot 208', 'Auto', 25130000)">Comprar</button>
+
+            </div>
+            <div class="product-card" data-category="capital-federal" data-brand="fiat">
+                <img src="/RT_V_fba13188b79949f0bdc8c2f7802c575e.webp" alt="Fiat Pulse">
+                <h3>Fiat Pulse</h3>
+                <p>$33.850.000</p>
+                <p>Capital Federal</p>
+                <button class="buy-btn" onclick="agregarAlCarrito('Fiat Pulse', 'Auto', 33850000)">Comprar</button>
+            </div>
+            <div class="product-card" data-category="capital-federal" data-brand="ferrari">
+                <img src="/5f60fede966ae519cbd62beb-ferrari-portofino-m-design-hotspot-mob-new_3.avif" alt="Fiat Pulse">
+                <h3>Ferrari Portofino</h3>
+                <p>$200.000.000</p>
+                <p>Capital Federal</p>
+                <button class="buy-btn" onclick="agregarAlCarrito('Fiat Pulse', 'Auto', 33850000)">Comprar</button>
+            </div>
+            <div class="product-card" data-category="gba-norte" data-brand="porsche">
+                <img src="/extcam01.webp" alt="Fiat Pulse">
+                <h3>Porsche Cayenne</h3>
+                <p>$120.000.000</p>
+                <p>GBA Norte</p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            <div class="product-card" data-category="gba-sur" data-brand="fiat">
+                <img src="/bmw-m4-competition-coupe-m-xdrive-article.jpg" alt="Fiat Pulse">
+                <h3>M4 Competition</h3>
+                <p>$100.000.000</p>
+                <p>GBA Sur</p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            <div class="product-card" data-category="capital-federal" data-brand="audi">
+                <img src="/15099-2023-audi-a4.webp" alt="Fiat Pulse">
+                <h3>Audi A4</h3>
+                <p>$110.000.000</p>
+                <p>Capital Federal</p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            <div class="product-card" data-category="gba-norte" data-brand="falcon">
+                <img src="/16846293240-Falcon-verde-773x458.jpg" alt="Peugeot 208 GT">
+                <h3>Falcon</h3>
+                <p>$5.000.000</p>
+                <p>GBA Norte</p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            <div class="product-card" data-category="gba-sur" data-brand="mercedes">
+                <img src="/mercedesjjjjj.jpg" alt="Volkswagen Polo">
+                <h3>Mercedes Benz</h3>
+                <p>$195.000.000</p>
+                <p>GBA Sur</p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+        </section>
+    </main>
+</body>
+<footer class="footer">
+    <p>© 2024 Mercamarra. Todos los derechos reservados.</p>
+</footer>
+<script src="/scriptauto.js"></script>
+</html>

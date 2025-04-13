@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mercamarra</title>
+    <link rel="stylesheet" href="/EstilosJuarez.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="custom-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/logo-mercamarra.png" class="logo-img">
+                <h1>Mercamarra</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+            </div>
+            <div class="user-options">
+    <span th:if="${nombreUsuario != null}">
+        Hola, <b th:text="${nombreUsuario}"></b> |
+        <a href="/usuarios/logout">Cerrar Sesión</a>
+    </span>
+    <span th:if="${nombreUsuario == null}">
+        <a href="/usuarios/registro">Mi Cuenta</a>
+    </span>
+</div>
+
+                <a href="/carrito.html"><img src="/icons8-agregar-a-carrito-de-compras-30.png" alt="Carrito"></a>
+            </div>
+    </header>
+    <nav class="custom-nav">
+        <ul class="nav-bar">
+            <li><a href="/index">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="/usuarios/registro">Registrarse</a></li>
+            <li><a href="/usuarios/login">Inicio de Sesión</a></li>
+            <li><a href="/usuarios/logout">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="banners">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="/parris-dunklow-pair.webp">
+                    </div>
+                    <div class="slide">
+                        <img src="/productos31_13950.png">
+                    </div>
+                    <div class="slide">
+                        <img src="/productos31_10208.png">
+                    </div>
+                    <div class="slide">
+                        <img src="/CS_9050098_NA_VENGEANCE_a7400_01.png">
+                    </div>
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+        <h2 class="section-title">Productos Destacados</h2><br>
+        <section class="productos">
+            <div class="producto">
+                <img src="/Monitor.png" alt="Producto 1">
+                <p>Monitor Gaming</p>
+                <p>$100</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/Play5.png" alt="Producto 2">
+                <p>PlayStation 5</p>
+                <p>$150</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/Heladera.avif" alt="Producto 3">
+                <p>Heladera</p>
+                <p>$200</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/remeranegranike.png" alt="Producto 4">
+                <p>Remera Nike</p>
+                <p>$250</p>
+                <button>Comprar</button>
+            </div>
+        </section><br>
+        <a name="categorias"><h2 class="section">Categorías</h2></a>
+        <div class="cat">
+            <div class="div-slider">
+                <div class="slidefsfs">
+                    <a href="/autos.html"><img class="imgslide" src="/Diseno-sin-titulo-2023-05-09T142206.192-749x561.jpg.webp"></a>
+                    <div class="textslider">Auto</div>
+                </div>
+                <div class="slidefsfs">
+                    <a href="/consolas.html"><img class="imgslide" src="/Diseno-sin-titulo-2023-05-09T142206.192-749x561.jpg.webp"></a>
+                    <div class="textslider">Consola</div>
+                </div>
+                <div class="slidefsfs">
+                    <a href="/ropa.html"><img class="imgslide" src="/Diseno-sin-titulo-2023-05-09T142206.192-749x561.jpg.webp"></a>
+                    <div class="textslider">Ropa</div>
+                </div>
+                <div class="slidefsfs">
+                    <a href="/electrodomesticos.html"><img class="imgslide" src="/Diseno-sin-titulo-2023-05-09T142206.192-749x561.jpg.webp"></a>
+                    <div class="textslider">Electrodomesticos</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Mercamarra. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>

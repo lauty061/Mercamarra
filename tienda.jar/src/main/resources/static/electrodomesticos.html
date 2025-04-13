@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilosauto.css" type="text/css"/>
+
+</head>
+<body>
+    <header class="custom-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/logo-mercamarra.png" class="logo-img">
+                <h1>Mercamarra</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+            </div>
+            <div class="user-options">
+                <!-- El usuario debe estar autenticado para ver su nombre -->
+                <span>Hola, Usuario | <a href="/usuarios/logout">Cerrar Sesión</a></span>
+            </div>
+
+
+                <a href="/carrito.html"><img src="/icons8-agregar-a-carrito-de-compras-30.png" alt="Carrito"></a>
+            </div>
+        </div>
+    </header>
+    <nav class="custom-nav">
+        <ul class="nav-bar">
+            <li><a href="/index">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="/usuarios/registro">Registrarse</a></li>
+            <li><a href="/usuarios/login">Inicio de Sesión</a></li>
+            <li><a href="/usuarios/logout">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
+    <main class="main-container">
+        <aside class="filters">
+            <h2>Filtrar Ropa</h2>
+            <div class="filter-group">
+                <h3>Marca</h3>
+                <button class="filter-btn" data-filter="liliana">Liliana</button>
+                <button class="filter-btn" data-filter="phillips">Phillips</button>
+                <button class="filter-btn" data-filter="philco">Philco</button>
+                <button class="filter-btn" data-filter="samsung">Samsung</button>
+                <button class="filter-btn" data-filter="all">Todos</button>
+            </div>
+            <div class="filter-group">
+        </aside>
+        <section class="product-grid">
+    <div class="product-card" data-brand="phillips">
+        <img src="/pava.jpg">
+        <h3>Pava Eléctrica</h3>
+        <p>$700.000</p>
+        <p>Phillips</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Pava Eléctrica', 'Electrodoméstico', 700000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="estufa" data-brand="liliana">
+        <img src="/estu.jpg">
+        <h3>Estufa</h3>
+        <p>$800.000</p>
+        <p>Liliana</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Estufa', 'Electrodoméstico', 800000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="licuadora" data-brand="phillips">
+        <img src="/licua.jpg">
+        <h3>Licuadora</h3>
+        <p>$600.000</p>
+        <p>Phillips</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Licuadora', 'Electrodoméstico', 600000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="lavarropas" data-brand="philco">
+        <img src="/lava.jpg">
+        <h3>Lavarropas</h3>
+        <p>$2.200.000</p>
+        <p>Philco</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Lavarropas', 'Electrodoméstico', 2200000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="televisor" data-brand="samsung">
+        <img src="/tele.jpg">
+        <h3>Televisor</h3>
+        <p>$1.000.000</p>
+        <p>Samsung</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Televisor', 'Electrodoméstico', 1000000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="microondas" data-brand="samsung">
+        <img src="/microon.jpg">
+        <h3>Microondas</h3>
+        <p>$800.000</p>
+        <p>Samsung</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Microondas', 'Electrodoméstico', 800000)">Comprar</button>
+    </div>
+    <div class="product-card" data-category="heladera" data-brand="philco">
+        <img src="/heladera.jpg">
+        <h3>Heladera</h3>
+        <p>$1.900.000</p>
+        <p>Philco</p>
+        <button class="buy-btn" onclick="agregarAlCarrito('Heladera', 'Electrodoméstico', 1900000)">Comprar</button>
+    </div>
+</section>
+
+    </main>
+</body>
+<footer class="footer">
+    <p>© 2024 Mercamarra. Todos los derechos reservados.</p>
+</footer>
+<script src="/scriptauto.js"></script>
+</html>

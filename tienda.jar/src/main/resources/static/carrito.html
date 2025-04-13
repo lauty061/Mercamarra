@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estiloscarro.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <h1>Tu Carrito de Compras</h1>
+    </header>
+    <nav class="custom-nav">
+        <ul class="nav-bar">
+            <li><a href="/index">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="/usuarios/registro">Registrarse</a></li>
+            <li><a href="/usuarios/login">Inicio de Sesión</a></li>
+            <li><a href="/usuarios/logout">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="carrito-body"></tbody>
+        </table>
+        <h3>Total: <span id="total">$0</span></h3>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </main>
+    <footer>
+        <p>© 2024 Mercamarra. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/scriptcarrito.js"></script>
+</body>
+</html>
