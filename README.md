@@ -9,8 +9,6 @@ Este es un proyecto escolar que simula una plataforma de comercio electrónico i
 - 🧠 **Java 17+**
 - 🌱 **Spring Boot** (Spring Web, Spring Data JPA)
 - 🛢️ **MySQL** (o la base de datos que hayas usado)
-- 🔐 **Spring Security** (si aplica)
-- 🖼️ **Thymeleaf** (motor de plantillas)
 - 🎨 **HTML / CSS / JavaScript**
 
 ---
@@ -18,7 +16,6 @@ Este es un proyecto escolar que simula una plataforma de comercio electrónico i
 ## 🎯 Funcionalidades principales
 
 - Registro e inicio de sesión de usuarios
-- Publicación de productos (nombre, precio, imagen, descripción)
 - Visualización de productos
 - Búsqueda y filtrado por nombre o categoría
 - Carrito de compras básico
